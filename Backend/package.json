@@ -6,7 +6,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "",
+  "author": "Nisha Ingole",
   "license": "ISC",
   "description": "",
   "dependencies": {
