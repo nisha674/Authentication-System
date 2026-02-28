@@ -16,7 +16,7 @@ app.get("/ping", (req, res) => {
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // 👈 FRONTEND
+    origin: "https://authentication-system-frontend-qe1u.onrender.com", // 👈 FRONTEND
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   }),
