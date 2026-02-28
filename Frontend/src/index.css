@@ -1,0 +1,221 @@
+/* Page background */
+.signupcon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card */
+.signupcon form {
+  background: #ffffff;
+  padding: 30px 35px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.signupcon h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input group */
+.signupcon form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.signupcon label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Inputs */
+.signupcon input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.signupcon input:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+.signupcon button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signupcon button:hover {
+  background: #5a67d8;
+}
+
+/* Login link */
+.signupcon span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signupcon span a {
+  margin-left: 5px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signupcon span a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .signupcon form {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+.loginpcon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6f7bf7, #7b5cd6);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Card wrapper */
+.loginpcon > div,
+.loginpcon form {
+  background: #fff;
+  width: 380px;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔥 FIX: Center Login heading */
+.loginpcon h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 26px;
+}
+
+/* Input groups */
+.loginpcon form div {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.loginpcon label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.loginpcon input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.loginpcon input:focus {
+  border-color: #6f7bf7;
+}
+
+/* Button */
+.loginpcon button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #6f7bf7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginpcon button:hover {
+  background: #5d6bf2;
+}
+
+.loginpcon span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.loginpcon span a {
+  margin-left: 5px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.loginpcon span a:hover {
+  text-decoration: underline;
+}
+
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.home-title {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.logout-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
