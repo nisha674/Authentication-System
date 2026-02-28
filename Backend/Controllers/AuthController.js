@@ -20,7 +20,7 @@ const signup = async (req, res) => {
       success: true,
     });
   } catch (error) {
-    return res.status(5000).json({
+    return res.status(500).json({
       message: "Internal server  error",
       success: false,
     });
@@ -47,7 +47,7 @@ const login = async (req, res) => {
     const jwtToken = jwt.sign(
       { email: user.email, _id: user.id },
       process.env.JWT_SECRET,
-      { expiresIn: "24h" }
+      { expiresIn: "24h" },
     );
     res.status(200).json({
       message: "Log in successful",
@@ -56,7 +56,13 @@ const login = async (req, res) => {
       email,
       name: user.name,
     });
-  } catch (error) {}
+  } catch (error) {
+    console.error("Login Error:", error);
+    return res.status(500).json({
+      message: "Internal Server Error",
+      success: false,
+    });
+  }
 };
 
 module.exports = { signup, login };
